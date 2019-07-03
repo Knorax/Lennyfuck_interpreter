@@ -3,6 +3,12 @@
 Hi! This project is a simple interpreter for the ( ͡° ͜ʖ ͡°)fuck esoteric language by ivancr72. My goal is to learn how to make interpreters and, eventually, compilers for some other esoteric language, because we obviously need it ( ͡~ ͜ʖ ͡°).
 What to keep it mind during this project : it's all for that handsome Lenny.
 
+## Opcodes
+
+| Lenny | Brainfuck+3 | Description |
+| --- | --- | --- |
+|( ͡° ͜ʖ ͡°) | + | Add one |
+
 ## Files
 
 For now, there is only a python interpreter pending.
