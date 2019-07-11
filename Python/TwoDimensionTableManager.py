@@ -18,15 +18,31 @@ class TwoDimensionTableManager(dict):
     def moveUp(self, currentXPos, currentYPos):
         if((currentYPos + 1) not in self) :
             self.update(currentXPos, currentYPos + 1, 0)
+        return currentYPos + 1
 
     def moveDown(self, currentXPos, currentYPos):
         if((currentYPos - 1) not in self) :
             self.update(currentXPos, currentYPos - 1, 0)
+        return currentYPos - 1
 
     def moveRight(self, currentXPos, currentYPos):
         if((currentXPos + 1) not in self or currentYPos not in self[currentXPos + 1]) :
             self.update(currentXPos + 1, currentYPos, 0)
+        return currentXPos + 1
 
     def moveLeft(self, currentXPos, currentYPos):
         if((currentXPos - 1) not in self or currentYPos not in self[currentXPos - 1]) :
             self.update(currentXPos - 1, currentYPos, 0)
+        return currenXPos -1
+
+    def incrementValueAt(self, currentXPos, currentYPos) :
+        if(self[currentXPos][currentYPos] == 255) :
+            self[currentXPos][currentYPos] = 0
+        else :
+            self[currentXPos][currentYPos]+=1
+
+    def decrementValueAt(self, currentXPos, currentYPos) :
+        if(self[currentXPos][currentYPos] == 0) :
+            self[currentXPos][currentYPos] = 255
+        else :
+            self[currentXPos][currentYPos]-=1
