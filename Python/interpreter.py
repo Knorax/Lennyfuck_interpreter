@@ -15,13 +15,13 @@ def interpret(path):
     code = f.read()
 
     # Print the code as is
-    print(code)
+    #print(code)
 
     # Pass it to our code manager (to clean it and execute it later)
     codeManager = CodeManager(code)
-    
+
     # Print the converted code (the code in Lenny is converted in Brainfuck+3 to make it easier to decode it)
-    print(codeManager["code"])
+    #print(codeManager["code"])
 
     # We know our manners, we close the file after using it
     f.close()

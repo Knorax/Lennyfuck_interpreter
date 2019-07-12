@@ -33,7 +33,7 @@ class TwoDimensionTableManager(dict):
     def moveLeft(self, currentXPos, currentYPos):
         if((currentXPos - 1) not in self or currentYPos not in self[currentXPos - 1]) :
             self.update(currentXPos - 1, currentYPos, 0)
-        return currenXPos -1
+        return currentXPos -1
 
     def incrementValueAt(self, currentXPos, currentYPos) :
         if(self[currentXPos][currentYPos] == 255) :
