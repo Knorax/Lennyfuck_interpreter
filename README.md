@@ -2,6 +2,8 @@
 
 Hi! This project is a simple interpreter for the ( ͡° ͜ʖ ͡°)fuck esoteric language by ivancr72. My goal is to learn how to make interpreters and, eventually, compilers for some other esoteric language, because we obviously need it ( ͡~ ͜ʖ ͡°).
 What to keep it mind during this project : it's all for that handsome Lenny.
+To execute your Lenny code, just call interpreter.py int the command prompt like :
+`python interpreter.py "pathToMyLennyCode"`
 
 ## Opcodes
 
